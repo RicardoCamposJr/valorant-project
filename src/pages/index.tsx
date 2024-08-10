@@ -5,11 +5,6 @@ import * as S from './styles'
 import { TIndex } from '@/types/TIndex'
 
 const Home: NextPageWithLayout<TIndex> = ({ children }) => {
-  const [a, setA] = useState<boolean>(false)
-  useEffect(() => {
-    setA(true)
-  }, [])
-
   return <S.Container>{children}</S.Container>
 }
 
